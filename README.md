@@ -13,7 +13,7 @@ Used the following as the module file
 
 module-whatis "Tiffany Batarseh's miniconda3 installation"
 
-exec /bin/logger -p local6.notice -t module-hpc $env(USER) "tbatarse/miniconda3"
+exec /bin/logger -p local6.notice -t module-hpc $env(USER) "tbatarse/miniconda/3"
 
 set ROOT /data/apps/user_contributed_software/tbatarse/miniconda3
 
