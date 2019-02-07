@@ -1,0 +1,192 @@
+```
+Last login: Tue Feb  5 12:20:00 on ttys000
+dhcp-v051-167:~ tiffanybatarseh$ conda create -n test pip
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.5.12
+  latest version: 4.6.2
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /Users/tiffanybatarseh/miniconda3/envs/test
+
+  added / updated specs:
+    - pip
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    zlib-1.2.11                |    h1de35cc_1004         101 KB  conda-forge
+    ca-certificates-2018.11.29 |       ha4d7672_0         143 KB  conda-forge
+    tk-8.6.9                   |    ha441bb4_1000         3.1 MB  conda-forge
+    ncurses-6.1                |    h0a44026_1002         1.3 MB  conda-forge
+    readline-7.0               |    hcfe32e1_1001         393 KB  conda-forge
+    python-3.7.1               |    h145921a_1000        21.8 MB  conda-forge
+    certifi-2018.11.29         |        py37_1000         145 KB  conda-forge
+    bzip2-1.0.6                |    h1de35cc_1002         148 KB  conda-forge
+    libcxx-7.0.0               |       h2d50403_2         1.1 MB  conda-forge
+    setuptools-40.8.0          |           py37_0         635 KB  conda-forge
+    llvm-meta-7.0.0            |                0           2 KB  conda-forge
+    sqlite-3.26.0              |    h1765d9f_1000         2.4 MB  conda-forge
+    wheel-0.32.3               |           py37_0          34 KB  conda-forge
+    xz-5.2.4                   |    h1de35cc_1001         268 KB  conda-forge
+    openssl-1.0.2p             |    h1de35cc_1002         3.0 MB  conda-forge
+    libffi-3.2.1               |                1          41 KB  bioconda
+    pip-19.0.1                 |           py37_0         1.8 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        36.4 MB
+
+The following NEW packages will be INSTALLED:
+
+    bzip2:           1.0.6-h1de35cc_1002   conda-forge
+    ca-certificates: 2018.11.29-ha4d7672_0 conda-forge
+    certifi:         2018.11.29-py37_1000  conda-forge
+    libcxx:          7.0.0-h2d50403_2      conda-forge
+    libffi:          3.2.1-1               bioconda
+    llvm-meta:       7.0.0-0               conda-forge
+    ncurses:         6.1-h0a44026_1002     conda-forge
+    openssl:         1.0.2p-h1de35cc_1002  conda-forge
+    pip:             19.0.1-py37_0         conda-forge
+    python:          3.7.1-h145921a_1000   conda-forge
+    readline:        7.0-hcfe32e1_1001     conda-forge
+    setuptools:      40.8.0-py37_0         conda-forge
+    sqlite:          3.26.0-h1765d9f_1000  conda-forge
+    tk:              8.6.9-ha441bb4_1000   conda-forge
+    wheel:           0.32.3-py37_0         conda-forge
+    xz:              5.2.4-h1de35cc_1001   conda-forge
+    zlib:            1.2.11-h1de35cc_1004  conda-forge
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+zlib-1.2.11          | 101 KB    | ##################################### | 100%
+ca-certificates-2018 | 143 KB    | ##################################### | 100%
+tk-8.6.9             | 3.1 MB    | ##################################### | 100%
+ncurses-6.1          | 1.3 MB    | ##################################### | 100%
+readline-7.0         | 393 KB    | ##################################### | 100%
+python-3.7.1         | 21.8 MB   | ##################################### | 100%
+certifi-2018.11.29   | 145 KB    | ##################################### | 100%
+bzip2-1.0.6          | 148 KB    | ##################################### | 100%
+libcxx-7.0.0         | 1.1 MB    | ##################################### | 100%
+setuptools-40.8.0    | 635 KB    | ##################################### | 100%
+llvm-meta-7.0.0      | 2 KB      | ##################################### | 100%
+sqlite-3.26.0        | 2.4 MB    | ##################################### | 100%
+wheel-0.32.3         | 34 KB     | ##################################### | 100%
+xz-5.2.4             | 268 KB    | ##################################### | 100%
+openssl-1.0.2p       | 3.0 MB    | ##################################### | 100%
+libffi-3.2.1         | 41 KB     | ##################################### | 100%
+pip-19.0.1           | 1.8 MB    | ##################################### | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate test
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+dhcp-v051-167:~ tiffanybatarseh$ source activate test
+(test) dhcp-v051-167:~ tiffanybatarseh$ pip install numpy
+Collecting numpy
+  Downloading https://files.pythonhosted.org/packages/46/e4/4a0cc770e4bfb34b4e10843805fef67b9a94027e59162a586c776f35c5bb/numpy-1.16.1-cp37-cp37m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (13.9MB)
+    100% |████████████████████████████████| 13.9MB 1.5MB/s
+Installing collected packages: numpy
+Successfully installed numpy-1.16.1
+(test) dhcp-v051-167:~ tiffanybatarseh$ conda env export -n test
+name: test
+channels:
+  - bioconda
+  - conda-forge
+  - default
+  - r
+  - defaults
+dependencies:
+  - libffi=3.2.1=1
+  - bzip2=1.0.6=h1de35cc_1002
+  - ca-certificates=2018.11.29=ha4d7672_0
+  - certifi=2018.11.29=py37_1000
+  - libcxx=7.0.0=h2d50403_2
+  - llvm-meta=7.0.0=0
+  - ncurses=6.1=h0a44026_1002
+  - openssl=1.0.2p=h1de35cc_1002
+  - pip=19.0.1=py37_0
+  - python=3.7.1=h145921a_1000
+  - readline=7.0=hcfe32e1_1001
+  - setuptools=40.8.0=py37_0
+  - sqlite=3.26.0=h1765d9f_1000
+  - tk=8.6.9=ha441bb4_1000
+  - wheel=0.32.3=py37_0
+  - xz=5.2.4=h1de35cc_1001
+  - zlib=1.2.11=h1de35cc_1004
+  - pip:
+    - numpy==1.16.1
+prefix: /Users/tiffanybatarseh/miniconda3/envs/test
+
+(test) dhcp-v051-167:~ tiffanybatarseh$
+```
+
+Numpy falls under the bulleted pip. It is separate to show it was installed by pip.
+
+Deactivate the test environment
+
+```
+(test) dhcp-v051-167:~ tiffanybatarseh$ source deactivate test
+(base) dhcp-v051-167:~ tiffanybatarseh$
+```
+
+Delete the environment
+
+```
+(base) dhcp-v051-167:~ tiffanybatarseh$ conda remove --name test --all
+
+Remove all packages in environment /Users/tiffanybatarseh/miniconda3/envs/test:
+
+
+## Package Plan ##
+
+  environment location: /Users/tiffanybatarseh/miniconda3/envs/test
+
+
+The following packages will be REMOVED:
+
+    bzip2:           1.0.6-h1de35cc_1002   conda-forge
+    ca-certificates: 2018.11.29-ha4d7672_0 conda-forge
+    certifi:         2018.11.29-py37_1000  conda-forge
+    libcxx:          7.0.0-h2d50403_2      conda-forge
+    libffi:          3.2.1-1               bioconda
+    llvm-meta:       7.0.0-0               conda-forge
+    ncurses:         6.1-h0a44026_1002     conda-forge
+    openssl:         1.0.2p-h1de35cc_1002  conda-forge
+    pip:             19.0.1-py37_0         conda-forge
+    python:          3.7.1-h145921a_1000   conda-forge
+    readline:        7.0-hcfe32e1_1001     conda-forge
+    setuptools:      40.8.0-py37_0         conda-forge
+    sqlite:          3.26.0-h1765d9f_1000  conda-forge
+    tk:              8.6.9-ha441bb4_1000   conda-forge
+    wheel:           0.32.3-py37_0         conda-forge
+    xz:              5.2.4-h1de35cc_1001   conda-forge
+    zlib:            1.2.11-h1de35cc_1004  conda-forge
+
+Proceed ([y]/n)? y
+
+(base) dhcp-v051-167:~ tiffanybatarseh$ conda info --envs
+# conda environments:
+#
+                         /Users/tiffanybatarseh/miniconda2
+                         /Users/tiffanybatarseh/miniconda2/envs/r-reticulate
+base                  *  /Users/tiffanybatarseh/miniconda3
+```
